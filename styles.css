@@ -36,7 +36,7 @@ section {
 }
 
 #photo {
-	background-image: url("images/mypic.jpg");
+	background-image: url("mypic.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
@@ -50,7 +50,7 @@ section {
 .introduction {
 	width: 60%;
 	height: 100%;
-	background-image: url("images/leaves-frame.jpg");
+	background-image: url("leaves-frame.jpg");
 	background-position: center top;
 	background-repeat: repeat-x;
 	background-size: contain;
@@ -115,22 +115,22 @@ section h1 {
 }
 
 .project.portfolio1 {
-	background-image: url(images/portfolio1.jpg);
+	background-image: url(portfolio1.jpg);
 }
 .project.portfolio2 {
-	background-image: url(images/portfolio2.jpg);
+	background-image: url(portfolio2.jpg);
 }
 .project.portfolio3 {
 	background-image: url(images/portfolio3.jpg);
 }
 .project.portfolio4 {
-	background-image: url(images/portfolio4.png);
+	background-image: url(portfolio4.png);
 }
 .project.portfolio5 {
-	background-image: url(images/portfolio5.png);
+	background-image: url(portfolio5.png);
 }
 .project.portfolio6 {
-	background-image: url(images/portfolio6.png);
+	background-image: url(portfolio6.png);
 }
 
 .info-container {
