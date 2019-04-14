@@ -1,0 +1,183 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Kanit;
+	margin: 0;
+	background-color: rgb(166, 237, 247, 0.5);
+}
+
+.navbar {
+	background-color: white;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 15px;
+}
+
+.navbar a {
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #9b9b9b;
+}
+
+section {
+	height: 100vh;
+    min-height: 600px;
+	width: 100%;
+}
+
+.main {
+	height: 90vh;
+}
+
+#photo {
+	background-image: url("images/mypic.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	display: inline-block;
+	width: 40%;
+	height: 100%;
+	overflow: hidden;
+	float: right;
+}
+
+.introduction {
+	width: 60%;
+	height: 100%;
+	background-image: url("images/leaves-frame.jpg");
+	background-position: center top;
+	background-repeat: repeat-x;
+	background-size: contain;
+	float: right;
+}
+
+.introduction #greeting {
+	padding: 20px;
+	color: #9b9b9b;
+	position: relative;
+	top: 25%;
+}
+
+.clearfix {
+	clear: both;
+}
+
+section h1 {
+	background-color: white;
+	font-size: 30px;
+	height: 50px;
+	padding: 5px;
+	margin: 0;
+	color: silver;
+}
+
+.portfolio .skill {
+	padding: 0px;
+	text-align: center;
+	margin: 15px auto;
+}
+
+.projects {
+	width: 100%;
+	text-align: center;
+	/*overflow: auto;*/
+}
+
+.project_container {
+	display: inline-block;
+}
+
+.project {
+	float: left;
+	margin: 15px;
+	width: 200px;
+	height: 200px;
+	/*box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.15);*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.star.grey {
+	filter: grayscale(0.9);
+}
+.project.portfolio1, .project.portfolio2, .project.portfolio3 {
+	background-position: top center;
+}
+
+.project.portfolio4, .project.portfolio5, .project.portfolio6 {
+	background-position: center center;
+}
+
+.project.portfolio1 {
+	background-image: url(images/portfolio1.jpg);
+}
+.project.portfolio2 {
+	background-image: url(images/portfolio2.jpg);
+}
+.project.portfolio3 {
+	background-image: url(images/portfolio3.jpg);
+}
+.project.portfolio4 {
+	background-image: url(images/portfolio4.png);
+}
+.project.portfolio5 {
+	background-image: url(images/portfolio5.png);
+}
+.project.portfolio6 {
+	background-image: url(images/portfolio6.png);
+}
+
+.info-container {
+	height: 90vh;
+	line-height: 90vh;
+	text-align: center;
+}
+
+.more {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	background-color: white;
+	opacity: 0.8;
+	border-radius: 15px;
+	padding: 15px;
+	text-align: left;
+}
+
+/* Mobile size */
+@media (max-width: 767px) {	
+	section {
+	width: 100vw;
+	height: 100%;
+	}
+
+	#photo {
+		display: none;
+	}
+
+	.introduction {
+		width: 100vw;
+		float: none;
+	}
+
+	#greeting h2 {
+		font-size: 15px;
+	}
+	body p {
+		font-size: 12px;
+	}
+
+	.projects {
+		width: 250px;
+		text-align: center;
+		margin: 10px auto;
+	}
+
+}
+}
