@@ -22,3 +22,19 @@ function pageMove(event) {
 		$('html, body').animate({scrollTop: $('.moreaboutme').position().top}, 2000)
 	}
 }
+
+//페이지 최하단 이동시 tothetop 보이
+$(window).on('scroll', function () {
+	var windowBottom = $(window).height() + $(window).scrollTop();
+	if (windowBottom == $(document).height()) {
+		$('#tothetop').fadeIn();
+	} else {
+		$('#tothetop').fadeOut();
+	}
+})
+
+
+//최상단 이동
+$('#tothetop').on('click', function() {
+	$('html, body').animate({scrollTop: 0}, 2000)
+})
