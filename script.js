@@ -11,7 +11,6 @@ $(".project").on('mouseleave', function(event) {
 })
 
 // 네비게이션 링크 클릭시 해당 페이지로 천천히 이동
-
 $('.navbar a').on('click', pageMove);
 
 function pageMove(event) {
@@ -25,11 +24,10 @@ function pageMove(event) {
 
 //페이지 최하단 이동시 tothetop 보이
 $(window).on('scroll', function () {
-	var windowBottom = $(window).height() + $(window).scrollTop();
-	if (windowBottom == $(document).height()) {
-		$('#tothetop').fadeIn();
+	if ($(window).scrollTop() >= $('.moreaboutme').position().top) {
+		$('#tothetop').fadeIn(1000);
 	} else {
-		$('#tothetop').fadeOut();
+		$('#tothetop').fadeOut(1000);
 	}
 })
 
@@ -38,3 +36,10 @@ $(window).on('scroll', function () {
 $('#tothetop').on('click', function() {
 	$('html, body').animate({scrollTop: 0}, 2000)
 })
+
+
+// $(".project").on('mouseover', function(event) {
+// 	var projectName = $(this).attr('class');
+// 	$(projectName).css('box-shadow', '0px 3px 5px 0 rgba(0, 0, 0, 0.15)');
+// }) 안 먹힘 왜 안먹히징
+
