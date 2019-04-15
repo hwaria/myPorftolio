@@ -37,9 +37,3 @@ $('#tothetop').on('click', function() {
 	$('html, body').animate({scrollTop: 0}, 2000)
 })
 
-
-// $(".project").on('mouseover', function(event) {
-// 	var projectName = $(this).attr('class');
-// 	$(projectName).css('box-shadow', '0px 3px 5px 0 rgba(0, 0, 0, 0.15)');
-// }) 안 먹힘 왜 안먹히징
-
