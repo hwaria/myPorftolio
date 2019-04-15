@@ -11,3 +11,14 @@ $(".project").on('mouseleave', function(event) {
 })
 
 // 네비게이션 링크 클릭시 해당 페이지로 천천히 이동
+
+$('.navbar a').on('click', pageMove);
+
+function pageMove(event) {
+	var id = $(this).attr('id');
+	if (id == "section2") {
+		$('html, body').animate({scrollTop: $('.portfolio').position().top}, 1000)
+	} else if (id == "section3") {
+		$('html, body').animate({scrollTop: $('.moreaboutme').position().top}, 2000)
+	}
+}
