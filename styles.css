@@ -150,6 +150,25 @@ section h1 {
 	text-align: left;
 }
 
+#tothetop {
+	float: right;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#tothetop img {
+	display: block;
+
+}
+
+#tothetop h3 {
+	position: relative;
+	bottom: 70px;
+	left: 30px;
+	color: grey;
+	font-weight: bold;
+}
+
 /* Mobile size */
 @media (max-width: 767px) {	
 	section {
